@@ -2,4 +2,5 @@
     <string name="app_name">EC02_MOVILES</string>
     <string name="tituloRegistro">INFORMACION</string>
     <string name="botonAccederRegistro">Acceder</string>
+    <string name="botonListarRegistro">Listar</string>
 </resources>
