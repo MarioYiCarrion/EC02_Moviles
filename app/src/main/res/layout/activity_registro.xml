@@ -200,6 +200,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:enabled="false"
         android:hint="Ingrese otra cualidad"
         android:inputType="text"
         android:textSize="12sp"
