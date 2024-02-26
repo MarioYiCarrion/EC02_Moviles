@@ -4,20 +4,24 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import pe.edu.idat.ec02_moviles.databinding.ActivityListadoBinding
 
 class ListadoActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityListadoBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityListadoBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        intent.getSerializableExtra("listaPersonas")
-        as ArrayList<String>
-        val adapter = ArrayAdapter(applicationContext,
-            android.R.layout.simple_list_item_1,
-            listaPersonas)
-        binding.lvlistado.adapter = adapter
+        this.supportActionBar?.hide()
+        setContentView(R.layout.activity_listado)
+
+        val recyclerView = findViewById<RecyclerView>(R.id.rvevento)
+        val  adapter =CustomAdapter()
+
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = adapter
+
     }
 }
