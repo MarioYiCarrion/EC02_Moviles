@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">EC02_MOVILES</string>
+<<<<<<< HEAD
     <string name="btnMarioRegistrar">REGISTRAR</string>
     <string name="btnMarioFormulario">FORMULARIO</string>
     <string name="btnMarioListado">LISTADO</string>
+=======
+    <string name="tituloRegistro">INFORMACION</string>
+    <string name="botonAccederRegistro">Acceder</string>
+    <string name="botonListarRegistro">Listar</string>
+>>>>>>> 352b23f99bdd56889f70862d1945f84f02ab31b0
 </resources>
