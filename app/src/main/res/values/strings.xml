@@ -1,10 +1,6 @@
 <resources>
     <string name="app_name">EC02_MOVILES</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <string name="titulo4listado">LISTADO</string>
-=======
-<<<<<<< HEAD
+
 =======
 >>>>>>> d7a443542c8a00bc7c3083bc4e27127b1cd4a9cc
     <string name="tituloRegistro">INFORMACION</string>
@@ -14,7 +10,7 @@
     <string name="btnMarioRegistrar">REGISTRAR</string>
     <string name="btnMarioFormulario">FORMULARIO</string>
     <string name="btnMarioListado">LISTADO</string>
-<<<<<<< HEAD
+
     <string name="titulo4lista1">LISTA DE EVENTOS INTERNACIONALES</string>
     >>>>>>> 2ff2bee8c3fa5757c7e75d8af0e4dc720c211766
 >>>>>>> d7a443542c8a00bc7c3083bc4e27127b1cd4a9cc
