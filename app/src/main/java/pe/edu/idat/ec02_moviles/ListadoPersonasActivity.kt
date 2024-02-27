@@ -16,8 +16,6 @@ class ListadoPersonasActivity : AppCompatActivity() {
         binding =ActivityListadoPersonasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.rvElementos.layoutManager=LinearLayoutManager(applicationContext)
-        binding.rvElementos.adapter=AdapterItem(intent.getSerializableExtra("listadoPersonas"))
 
     }
 
