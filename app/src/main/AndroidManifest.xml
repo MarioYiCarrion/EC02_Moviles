@@ -14,39 +14,26 @@
         android:theme="@style/Theme.EC02_MOVILES"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             android:name=".ListadoActivity"
-=======
-=======
->>>>>>> d7a443542c8a00bc7c3083bc4e27127b1cd4a9cc
-=======
             android:name=".ListadoCuestionarioActivity"
             android:exported="false" />
         <activity
             android:name=".FormularioActivity"
             android:exported="false" />
         <activity
->>>>>>> aperez
+
             android:name=".ListadoPersonasActivity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"
-<<<<<<< HEAD
->>>>>>> d7a443542c8a00bc7c3083bc4e27127b1cd4a9cc
-=======
->>>>>>> d7a443542c8a00bc7c3083bc4e27127b1cd4a9cc
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

@@ -1,26 +1,12 @@
 <resources>
-<<<<<<< HEAD
     <string name="app_name">EC02_MOVILES</string>
-
-=======
->>>>>>> d7a443542c8a00bc7c3083bc4e27127b1cd4a9cc
-=======
->>>>>>> aperez
     <string name="tituloRegistro">INFORMACION</string>
     <string name="botonAccederRegistro">Acceder</string>
     <string name="botonListarRegistro">Listar</string>
     <string name="btnMarioRegistrar">REGISTRAR</string>
     <string name="btnMarioFormulario">FORMULARIO</string>
     <string name="btnMarioListado">LISTADO</string>
-<<<<<<< HEAD
-
     <string name="titulo4lista1">LISTA DE EVENTOS INTERNACIONALES</string>
-    >>>>>>> 2ff2bee8c3fa5757c7e75d8af0e4dc720c211766
->>>>>>> d7a443542c8a00bc7c3083bc4e27127b1cd4a9cc
-=======
->>>>>>> 2ff2bee8c3fa5757c7e75d8af0e4dc720c211766
->>>>>>> d7a443542c8a00bc7c3083bc4e27127b1cd4a9cc
-=======
     <string name="titulocuestionario">CUESTIONARIO</string>
     <string name="valpregunta1">1. Marque sus habilidades.</string>
     <string name="valpregunta2">2. ¿Cuán significativo es tu trabajo?</string>
@@ -44,5 +30,4 @@
     <string name="valresolver">Resolver</string>
     <string name="errorpregunta1">Debe marcar minimo una opcion.</string>
     <string name="titulolistadecuestionario">LISTA DE REGISTROS DE CUESTIONARIO</string>
->>>>>>> aperez
 </resources>
