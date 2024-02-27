@@ -27,4 +27,5 @@
     <string name="valno">No</string>
     <string name="valresolver">Resolver</string>
     <string name="errorpregunta1">Debe marcar minimo una opcion.</string>
+    <string name="titulolistadecuestionario">LISTA DE REGISTROS DE CUESTIONARIO</string>
 </resources>
