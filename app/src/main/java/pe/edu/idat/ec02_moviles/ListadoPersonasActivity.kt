@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import pe.edu.idat.ec02_moviles.databinding.ActivityListadoPersonasBinding
-
+//nueva version
 class ListadoPersonasActivity : AppCompatActivity() {
 
     lateinit var binding:ActivityListadoPersonasBinding
@@ -17,7 +17,7 @@ class ListadoPersonasActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.rvElementos.layoutManager=LinearLayoutManager(applicationContext)
-        binding.rvElementos.adapter=AdapterItem(intent.getSerializableExtra("listadoPersonas"))
+        binding.rvElementos.adapter=AdapterItem(intent.getSerializableExtra("listadoPersonas") as ArrayList<String>)
 
     }
 

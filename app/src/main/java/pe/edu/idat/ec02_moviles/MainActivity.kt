@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnlistado -> {
                 startActivity(Intent(applicationContext, ListadoActivity::class.java))
             }
+
         }
     }
 }

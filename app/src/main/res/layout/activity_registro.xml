@@ -39,28 +39,32 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Soltero"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/rbCasado"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Casado"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/rbDivorciado"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Divorciado"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/rbViudo"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Viudo"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
 
     <androidx.constraintlayout.widget.Guideline
@@ -68,20 +72,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="392dp" />
+        app:layout_constraintGuide_end="25dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="391dp" />
+        app:layout_constraintGuide_begin="26dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="@string/tituloRegistro"
         android:textAlignment="center"
         android:textSize="34sp"
@@ -101,7 +105,8 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/tvApellido"
@@ -114,7 +119,8 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/tvDni"
@@ -127,7 +133,8 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/tvApellido" />
+        app:layout_constraintTop_toBottomOf="@+id/tvApellido"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/tvCelular"
@@ -140,7 +147,8 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/tvDni" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDni"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/tvEmail"
@@ -154,7 +162,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/tvCelular" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCelular"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView2"
@@ -180,28 +189,32 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Puntual"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbRespetuoso"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Respetuoso"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbResponsable"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Responsable"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbOtro"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Otro"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <EditText
@@ -217,7 +230,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView3"
