@@ -14,10 +14,14 @@
         android:theme="@style/Theme.EC02_MOVILES"
         tools:targetApi="31">
         <activity
+            android:name=".prueba"
+            android:exported="false" />
+        <activity
             android:name=".ListadoActivity"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false"></activity>
+        <activity
+            android:name=".ListadoCuestionarioActivity"
+            android:exported="false"></activity>
         <activity
             android:name=".ListadoCuestionarioActivity"
             android:exported="false" >
@@ -25,16 +29,13 @@
         </activity>
         <activity
             android:name=".FormularioActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".ListadoPersonasActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".RegistroActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -43,7 +44,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
