@@ -8,7 +8,7 @@ import android.widget.CheckBox
 import pe.edu.idat.ec02_moviles.databinding.ActivityRegistroBinding
 import pe.edu.idat.ec02_moviles.util.AppMensaje
 import pe.edu.idat.ec02_moviles.util.TipoMensaje
-
+//nueva version
 class RegistroActivity : AppCompatActivity(),View.OnClickListener{
 
     lateinit var binding: ActivityRegistroBinding
@@ -36,7 +36,7 @@ class RegistroActivity : AppCompatActivity(),View.OnClickListener{
             binding.tvDni.text.toString().trim().isEmpty()||
             binding.tvCelular.text.toString().trim().isEmpty()||
             binding.tvEmail.text.toString().trim().isEmpty()
-            )
+        )
             respuesta=false
 
         return respuesta
@@ -60,6 +60,13 @@ class RegistroActivity : AppCompatActivity(),View.OnClickListener{
         return respuesta
     }
 
+    fun validarOtraCualidad():Boolean{
+        var respuesta=true
+        if(binding.cbOtro.isChecked && binding.tvCualidad.text.toString().trim().isEmpty()) respuesta=false
+
+        return respuesta
+    }
+
     fun validarFormulario():Boolean{
         var respuesta=false
         var mensaje=""
@@ -67,6 +74,7 @@ class RegistroActivity : AppCompatActivity(),View.OnClickListener{
         if(!validarDatosPersonales()) mensaje="Verificar que se haya ingresado el nombre, apellido, dni, celular o email"
         else if(!validarCualidades()) mensaje="Verificar que se haya ingresado las cualidades"
         else if(!validarEstadoCivil()) mensaje="Verificar que se haya ingresado el estado civil"
+        else if(!validarOtraCualidad()) mensaje="Verificar el texto de la otra cualidad"
         else respuesta=true
 
         if(!respuesta) AppMensaje.enviarMensaje(binding.root,mensaje,TipoMensaje.ERROR)
@@ -76,20 +84,22 @@ class RegistroActivity : AppCompatActivity(),View.OnClickListener{
 
     private fun irListarPersonas() {
         var intentListadoPersonas =Intent(applicationContext,ListadoPersonasActivity::class.java)
-                                    .apply { putExtra("listadoPersonas",listaPersonas) }
+            .apply { putExtra("listadoPersonas",listaPersonas) }
 
         startActivity(intentListadoPersonas)
     }
 
     private fun registrarPersona() {
         if(validarFormulario()){
+            if (!binding.tvCualidad.text.toString().isEmpty()) listaCualidades.add(binding.tvCualidad.text.toString().trim())
+
             var infoPersona =   binding.tvNombre.text.toString() + " " +
-                                binding.tvApellido.text.toString() + " " +
-                                binding.tvDni.text.toString() + " " +
-                                binding.tvCelular.text.toString() + " " +
-                                binding.tvEmail.text.toString() + " " +
-                                obtenerCualidades() + " " +
-                                obtenerEstadoCivil()
+                    binding.tvApellido.text.toString() + " " +
+                    binding.tvDni.text.toString() + " " +
+                    binding.tvCelular.text.toString() + " " +
+                    binding.tvEmail.text.toString() + " " +
+                    obtenerCualidades() + " " +
+                    obtenerEstadoCivil()
 
             listaPersonas.add(infoPersona)
             AppMensaje.enviarMensaje(binding.root,"Persona agregada",TipoMensaje.CORRECTO)
@@ -99,21 +109,25 @@ class RegistroActivity : AppCompatActivity(),View.OnClickListener{
 
     fun agregarQuitarCualidades(v: View){
         val checkbox= v as CheckBox
-        if (checkbox.isChecked)
+        if (checkbox.isChecked) {
             //if(checkbox.id==binding.cbOtro.id){
-            if(checkbox.id==R.id.cbOtro){
+            if (checkbox.id == R.id.cbOtro) {
                 //listaCualidades.add(checkbox.text.toString())
-                listaCualidades.add(binding.tvCualidad.text.toString())
-            }
-            else listaCualidades.add(checkbox.text.toString())
+                //listaCualidades.add(binding.tvCualidad.text.toString())
+                //binding.tvCualidad.isActivated = true
+                binding.tvCualidad.isEnabled=true
+            } else listaCualidades.add(checkbox.text.toString())
+        }
         else
-            //if(checkbox.id==binding.cbOtro.id){
+        //if(checkbox.id==binding.cbOtro.id){
             if(checkbox.id==R.id.cbOtro){
                 //listaCualidades.add(checkbox.text.toString())
-                listaCualidades.remove(binding.tvCualidad.text.toString())
+                //listaCualidades.remove(binding.tvCualidad.text.toString())
+                listaCualidades.remove(binding.tvCualidad.text.toString().trim())
                 binding.tvCualidad.setText("")
-            }
-            listaCualidades.remove(checkbox.text.toString())
+                //binding.tvCualidad.isActivated=false
+                binding.tvCualidad.isEnabled=false
+            }else listaCualidades.remove(checkbox.text.toString())
     }
 
     fun obtenerCualidades():String{
@@ -143,11 +157,11 @@ class RegistroActivity : AppCompatActivity(),View.OnClickListener{
         }
         else
             when(v!!.id){
-            //binding.btnRegistroAcceder.id->registrarPersona()
-            //binding.btnRegistroListar.id->irListarPersonas()
-            R.id.btnRegistroAcceder->registrarPersona()
-            R.id.btnRegistroListar->irListarPersonas()
-        }
+                //binding.btnRegistroAcceder.id->registrarPersona()
+                //binding.btnRegistroListar.id->irListarPersonas()
+                R.id.btnRegistroAcceder->registrarPersona()
+                R.id.btnRegistroListar->irListarPersonas()
+            }
     }
 
 }

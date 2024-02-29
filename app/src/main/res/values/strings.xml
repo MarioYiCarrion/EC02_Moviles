@@ -30,4 +30,8 @@
     <string name="valresolver">Resolver</string>
     <string name="errorpregunta1">Debe marcar minimo una opcion.</string>
     <string name="titulolistadecuestionario">LISTA DE REGISTROS DE CUESTIONARIO</string>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 588dad46d42b438b44fb1efd7676785b64228831
 </resources>

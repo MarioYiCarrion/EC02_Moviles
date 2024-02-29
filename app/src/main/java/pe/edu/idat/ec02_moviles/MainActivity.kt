@@ -27,6 +27,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnformulario -> {
                 startActivity(Intent(applicationContext, FormularioActivity::class.java))
             }
+<<<<<<< HEAD
+=======
+            R.id.btnlistado -> {
+                startActivity(Intent(applicationContext, ListadoActivity::class.java))
+            }
+>>>>>>> 588dad46d42b438b44fb1efd7676785b64228831
 
         }
     }
